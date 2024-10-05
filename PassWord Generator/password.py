@@ -1,6 +1,7 @@
 #password generator
 import random
 import string
+import pyperclip
 
 def generate_password(length, uppercase = True, lowercase = True, digits = True, special_char = True):
     characters = ""
@@ -56,6 +57,13 @@ while True:
         print("-----------------------------------------------------------------")
         print(f"{user_name}, your Generated Password is---> {generated_password}")
         print("-----------------------------------------------------------------")
+
+        copy = input(f"{user_name}, do you want to copy the generated password (yes/no)---> ").lower()
+        if copy == "yes":
+            pyperclip.copy(generated_password)
+            print(f"{user_name}, your password has been copied to the clipboard.")
+        else:
+            print(f"{user_name}, your password has not been copied to the clipboard.")
     else:
         print("Error generating password")
 
