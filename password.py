@@ -61,9 +61,13 @@ while True:
         copy = input(f"{user_name}, do you want to copy the generated password (yes/no)---> ").lower()
         if copy == "yes":
             pyperclip.copy(generated_password)
+            print("-----------------------------------------------------------------")
             print(f"{user_name}, your password has been copied to the clipboard.")
+            print("-----------------------------------------------------------------")
         else:
+            print("-----------------------------------------------------------------")
             print(f"{user_name}, your password has not been copied to the clipboard.")
+            print("-----------------------------------------------------------------")
     else:
         print("Error generating password")
 
