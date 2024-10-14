@@ -52,6 +52,7 @@ def welcome_message():
             print("-----------------------------------------")
             count = int(input("How many numbers do you want to add---> "))
             numbers = [float(input(f"Input number {i+1}---> ")) for i in range(count)]
+            #function call
             addtion(numbers)
 
     elif option in "b":
@@ -60,6 +61,7 @@ def welcome_message():
             print("-----------------------------------------")
             count = int(input("How many numbers do you want to subtract---> "))
             numbers = [float(input(f"Input number {i+1}---> ")) for i in range(count)]
+            #function call
             subtraction(numbers)
 
     elif option in "c":
@@ -68,6 +70,7 @@ def welcome_message():
             print("-----------------------------------------")
             count = int(input("How many numbers do you want to multiply---> "))
             numbers = [float(input(f"Input number {i+1}---> ")) for i in range(count)]
+            #function call
             multiplication(numbers)
         
     elif option in "d":
@@ -76,6 +79,7 @@ def welcome_message():
             print("-----------------------------------------")
             count = int(input("How many numbers do you want to divide---> "))
             numbers = [float(input(f"Input number {i+1}---> ")) for i in range(count)]
+            #function call
             division(numbers)
 
     elif option in "e":
@@ -92,7 +96,7 @@ def welcome_message():
 
         
 
-
+#function call for main message
 welcome_message()
 
 
